@@ -227,18 +227,20 @@ body {
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
+  -ms-background-size: cover;
   -o-background-size: cover;
   -moz-background-size: cover;
   -webkit-background-size: cover;
   height: 80vh;
+  width:100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+   -ms-flex-align: center;
+   align-items: center;
   -ms-flex-pack: distribute;
-      justify-content: space-around;
+   justify-content: space-around;
 }
 
 .section-2 .left-section {
