@@ -222,12 +222,8 @@ body {
 }
 
 .section-2 {
-  background-image: url(../images/img-accomplish.png);
-  background-position: center;
+  background-image: url(../images/img-accomplish.png) no-repeat scroll right top #00000;
   background-size: cover;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  -ms-background-size: cover;
   -o-background-size: cover;
   -moz-background-size: cover;
   -webkit-background-size: cover;
