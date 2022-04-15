@@ -222,21 +222,19 @@ body {
 }
 
 .section-2 {
-  background-image: url(../images/img-accomplish.png) no-repeat scroll right top #00000;
-  background-size: cover;
-  -o-background-size: cover;
-  -moz-background-size: cover;
-  -webkit-background-size: cover;
-  height: 80vh;
-  width:100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-   -ms-flex-align: center;
-   align-items: center;
-  -ms-flex-pack: distribute;
-   justify-content: space-around;
+    background-image: url(../images/img-accomplish.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 80vh;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -ms-flex-pack: distribute;
+    justify-content: space-around;
 }
 
 .section-2 .left-section {
