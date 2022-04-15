@@ -227,6 +227,9 @@ body {
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
+  -o-background-size: cover;
+  -moz-background-size: cover;
+  -webkit-background-size: cover;
   height: 80vh;
   display: -webkit-box;
   display: -ms-flexbox;
