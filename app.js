@@ -34,41 +34,28 @@ clientBtn.addEventListener("click", () => {
 
 //cards
 const btns = document.querySelectorAll(".btns");
-cards = document.querySelectorAll(".card");
+const cards = document.querySelectorAll(".card");
 
-btns.forEach((e) => {
-  e.addEventListener("click", () => {
-    //change the background color of button
-    btns[0].style.backgroundColor = "#fff";
-    btns[1].style.backgroundColor = "#fff";
-    btns[2].style.backgroundColor = "#fff";
-    btns[3].style.backgroundColor = "#fff";
-    btns[4].style.backgroundColor = "#fff";
-    btns[5].style.backgroundColor = "#fff";
+btns.forEach((elem, i) => {
+  elem.addEventListener("click", () => {
+    //change the background color of buttons
+    for (let k = 0; k < btns.length; k++) {
+      const btn = btns[k];
+      btn.style.backgroundColor = "#fff";
+    }
 
     //for the card get hidden
-    cards.forEach((card) => {
+    for (let j = 0; j < cards.length; j++) {
+      const card = cards[j];
       card.style.cssText = "visibility: hidden; transform: scale(0);";
-    });
+    }
 
-    if (e === btns[0]) {
-      btns[0].style.backgroundColor = "#16152646";
-      cards[1].style.cssText = "visibility: visible; transform: scale(1);";
-    } else if (e === btns[1]) {
-      btns[1].style.backgroundColor = "#16152646";
-      cards[2].style.cssText = "visibility: visible; transform: scale(1);";
-    } else if (e === btns[2]) {
-      btns[2].style.backgroundColor = "#16152646";
-      cards[3].style.cssText = "visibility: visible; transform: scale(1);";
-    } else if (e === btns[3]) {
-      btns[3].style.backgroundColor = "#16152646";
-      cards[4].style.cssText = "visibility: visible; transform: scale(1);";
-    } else if (e === btns[4]) {
-      btns[4].style.backgroundColor = "#16152646";
-      cards[5].style.cssText = "visibility: visible; transform: scale(1);";
-    } else {
-      btns[5].style.backgroundColor = "#16152646";
+    elem.style.backgroundColor = "#16152646";
+
+    if (i === btns.length - 1) {
       cards[0].style.cssText = "visibility: visible; transform: scale(1);";
+    } else {
+      cards[i + 1].style.cssText = "visibility: visible; transform: scale(1);";
     }
   });
 });
